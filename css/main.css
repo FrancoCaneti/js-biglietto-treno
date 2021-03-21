@@ -1,0 +1,23 @@
+body {
+    background-image: url(../img/Train-Wallpapers-for-Android-APK-Download.jpg);
+    background-size: 100%;
+    height:100%;
+    width:100%;
+    text-align: center;
+    display: flex;
+    justify-content:center ;
+    background-color: black;
+    
+}
+
+
+
+.bot-p{
+    margin: 298px;
+    height: 90px;
+    width: 31%;
+    background-color: #000000b3;
+    color: white;
+    border: 1px solid #00000038;
+    border-radius: 64%;
+}

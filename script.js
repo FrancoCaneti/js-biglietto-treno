@@ -4,7 +4,7 @@ console.log('Quanti km deve percorrere?',km)
 
 
 //Età
-var age = prompt ('Quanti anni hai?');
+var age = prompt('Quanti anni hai?');
 console.log('quanti anni ha',age);
 
 //Prezzo
@@ -18,19 +18,18 @@ var prezzoUnder = prezzo - scontoUnder;
  //Prezzo Over 65  
  var scontoOver = prezzo * 40 / 100;
  var prezzoOver = prezzo - scontoOver; 
- console.log('prezzo over:',prezzoOver);
+
  
 
 //Prezzo finale
 var prezzoFinale
 if ( age < 18 ) {
-    prezzoFinale = prezzoUnder + '$';
-} else if ( age >=  18 ) {
-    prezzoFinale = prezzo +'$';
-} else if ( age > 65) {
-    prezzoFinale = prezzoUnder + '$';
+    prezzoFinale = prezzoUnder.toFixed(2);
+} else  if ( age >=  18 || age <= 65 ) {
+    prezzoFinale = prezzo.toFixed(2);
+} else {
+    prezzoFinale = prezzoOver.toFixed(2);
 }
-
     
-  console.log('Il prezzo da pagare è:'+ prezzoFinale )       
-    
+  console.log('Il prezzo da pagare è:'+ prezzoFinale +'€') ;      
+    document.getElementById('risultato').innerHTML = ('Il suo prezzo da pagare è: ' + prezzoFinale + '€')
