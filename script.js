@@ -25,11 +25,13 @@ var prezzoUnder = prezzo - scontoUnder;
 var prezzoFinale
 if ( age < 18 ) {
     prezzoFinale = prezzoUnder.toFixed(2);
-} else  if ( age >=  18 || age <= 65 ) {
+} else if ( age >  17 ) {
     prezzoFinale = prezzo.toFixed(2);
-} else {
+} else  if ( age > 65 ) {
     prezzoFinale = prezzoOver.toFixed(2);
-}
-    
-  console.log('Il prezzo da pagare è:'+ prezzoFinale +'€') ;      
+} 
+  console.log('Il prezzo da pagare è:'+ prezzoFinale +'€') ; 
+  
+  //Risultato schermo
+
     document.getElementById('risultato').innerHTML = ('Il suo prezzo da pagare è: ' + prezzoFinale + '€')
